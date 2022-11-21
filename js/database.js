@@ -3,7 +3,7 @@
 const data = [
   {
     id: 1,
-    img: "../loja/img/jaqueta.svg",
+    img: "../img/jaqueta.svg",
     nameItem: "Lightweight Jacket",
     description:
       "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
