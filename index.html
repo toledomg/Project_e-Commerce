@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/database.js" defer></script>
+  <script src="./js/index.js" defer></script>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Ecommerce</title>
+</head>
+
+<body class="container">
+  <div class="info">
+    <h3>Aproveite nossa BLACK FRIDAY ! ! !</h3>
+  </div>
+  <header class="cabecalho">
+    <div class="logo">
+      <a href="./index.html">
+        <img class="logo__img" src="./img/logo.png" alt="E-commerce">
+      </a>
+    </div>
+    <div>
+      <nav class="menu">
+        <button class="pesquisar__Menu" id="todos">Todos</button>
+        <button class="pesquisar__Menu" id="acessorios">Acessórios</button>
+        <button class="pesquisar__Menu" id="camisetas">Camisetas</button>
+        <button class="pesquisar__Menu" id="jaquetas">Jaquetas</button>
+      </nav>
+    </div>
+  </header>
+  <!--  -->
+  <main>
+    <div class="itens__produto">
+      <!-- Produtos Lista do DOM -->
+    </div>
+
+    <aside class="lateral">
+      <div class="lateral__div">
+
+        <form class="pesquisa">
+          <label for="pesquisaTexto" class="pesquisaTexto">Pesquisar texto</label>
+          <input type="text" class="pesquisaBox" id="pesquisaBox" placeholder="O que você Procura..." />
+          <button class="pesquisaBtn" id="pesquisaBtn"><img src="./img/search.png" alt="lupa-pesquisa"></button>
+        </form>
+
+        <section class="carrinho" id="carrinho_box">
+          <div>
+            <h1 class="carrinho__titulo" id="carrinho__titulo">Carrinho de Compra</h1>
+          </div>
+
+          <div class="carrinho__produtos" id="carrinhoProdutos">
+            <!-- Produtos DOM -->
+            <h3 class="carrinho__produtos__h3" id="carrinho__produtos_h3"><abbr
+                title="Adicione Itens ao Seu Carrinho">Carrinho Vazio</abbr></h3>
+
+
+          </div>
+
+          <div class="carrinho__valor_hidden" id="carrinho_valor">
+            <div class="carrinho__quantItens" id="carrinho_quantItens">
+              <p class="quantidade">Quantidade: </p>
+              <p class="quantidadeTotal" id="quantidadeTotal">0</p>
+            </div>
+
+            <div class="carrinho__valorTotal" id="carrinho_valorTotal">
+              <span class="valor">Total: </span>
+              <span class="valorTotal" id="valorTotal"></span>
+            </div>
+          </div>
+        </section>
+
+        <div>
+          <button class="carrinho__Btn" id="carrinho__Btn" hidden>Finalizar Compra</button>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+</body>
+
+<footer class="footer">
+  <section class="footer__logo">
+    <div>
+      <a href="./index.html">
+        <img class="footer__img" src="./img/logo.png" alt="e-commerce">
+      </a>
+    </div>
+    <div class="footer__p">
+      <p>Ecommerce é um site criado para o Projeto final de módulo Kenzie M1</p>
+    </div>
+  </section>
+  <section>
+    <div class="copyright">
+      <p><small>&copy; Copyright 2022 - Ecommerce</small></p>
+    </div>
+  </section>
+</footer>
+
+</html>
